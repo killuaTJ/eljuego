@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="estilosp.css">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Brygada+1918&family=Calligraffitti&family=Press+Start+2P&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<title>Ectoplasmic Adventure</title>
+</head>
+<body>
+	<style>
+		body {
+		  background-image: url('Pixel_Art_Background.jpg'); /* Reemplaza 'tu-archivo.gif' con la ruta de tu archivo GIF */
+		  background-size: cover;
+		  background-repeat: no-repeat;
+		  background-attachment: fixed;
+		}
+	
+		/* Estilos para el contenido en el fondo */
+		.contenido {
+		  text-align: center;
+		  padding: 100px;
+		  color: white;
+		  font-size: 24px;
+		}
+	  </style>
+	<!--Añadir Redes Sociales-->
+	<div class="social">
+		<ul>
+
+			<li><a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fectoplasma86248" class="twitter"></a></li>
+		</ul>
+	</div>
+	<!--Añadir Redes Sociales-->
+
+	<!--Navegador-->
+	<nav class="menu" id="menu">
+		<div class="contenedor contenedor-botones-menu">
+			<button id="btn-menu-barras" class="btn-menu-barras"><i class="fas fa-bars"></i></button>
+			<button id="btn-menu-cerrar" class="btn-menu-cerrar"><i class="fas fa-times"></i></button>
+		</div>
+
+		<div class="contenedor contenedor-enlaces-nav">
+			<div class="btn-departamentos" id="btn-departamentos">
+				<p><img src="Solanaa.png" alt="solana" width="50px" height="50px"> <span>Solana</span></p>
+				<i class="fas fa-caret-down"></i>
+			</div>
+
+			<div class="enlaces">
+				<button class="btn-abrir-popup" id="btn-abrir-popup">Integrantes</button>
+				<button class="juego1" id="juego1"><a href="index.html" id="Snake">Ectoplasmic Adventure<a></button>
+				<button class="juego2" id="juego2"><a href="http://localhost:3004" id="Dino">Transacciones</a></button>
+			</div>
+		<!--Navegador-->
+
+<!--Popup De Los Integrantes-->
+			<div class="overlay" id="overlay">
+				<div class="popup" id="popup">
+					<a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fa-regular fa-xmark">X</i></a>
+					<h3 class="titulo-pop">INTEGRANTES:</h3>
+						<h4 class="integrantes-pop">1 Diego Antonio Torres Moreno</h4>
+						<h4 class="integrantes-pop">2 Angel Orlando Aguilar Sanchez</h4>
+						<h4 class="integrantes-pop">3 Cristofer Joel Santiago Siqueiros</h4>
+						<h4 class="integrantes-pop">4 Jose Daniel Garcia Nunez</h4>
+						<h4 class="integrantes-pop">5 Marlon Alexis Diaz Bautista</h4>
+				</div>
+			</div>
+		</div>
+<!--Fin del POPUP-->
+		<div class="contenedor contenedor-grid">
+			<div class="grid" id="grid">
+				<div class="categorias">
+					<button class="btn-regresar"><i class="fas fa-arrow-left"></i> Regresar</button>
+					<h3 class="subtitulo">Categorias</h3>
+
+					<a href="#" data-categoria="historia">Mercado <i class="fas fa-angle-right"></i></a>
+					<a href="#" data-categoria="impacto">Donaciones <i class="fas fa-angle-right"></i></a>
+				</div>
+				<!--SUBCATEGORIAS-->
+				<div class="contenedor-subcategorias">
+					<div class="subcategoria " data-categoria="historia">
+						<div class="enlaces-subcategoria">
+							<button class="btn-regresar"><i class="fas fa-arrow-left"></i>Regresar</button>
+							<h3 class="subtitulo">Mercado</h3>
+							<button class="btn-info" id="botonv" onclick="mostrarv();">Productos de videojuegos</button>
+						</div>
+					</div>
+
+					<div class="subcategoria" data-categoria="impacto">
+						<div class="enlaces-subcategoria">
+							<button class="btn-regresar"><i class="fas fa-arrow-left"></i>Regresar</button>
+							<h3 class="subtitulo">Donaciones</h3>
+							<button class="btn-info" id="botoni" onclick="mostrari();">Dona aqui</button>
+						</div>
+					</div>
+					<!--Subcategoria de desarrollo-->
+					<div class="subcategoria" data-categoria="desarrollo">
+						<div class="enlaces-subcategoria">
+							<button class="btn-regresar"><i class="fas fa-arrow-left"></i>Regresar</button>
+					</div>
+
+					<div class="subcategoria" data-categoria="industria">
+						<div class="enlaces-subcategoria">
+							<button class="btn-regresar"><i class="fas fa-arrow-left"></i>Regresar</button>
+							<button class="btn-info" id="botonli" onclick="mostrarli();">La Industria</button>
+							<button class="btn-info" id="botonis" onclick="mostraris();">Impacto Economico y Social</button>
+							<button class="btn-info" id="botonad" onclick="mostrarad();">Algunos Desafios</button>
+							<button class="btn-info" id="botonmx" onclick="mostrarmx();">Cuanto Tiempo Pasan los Mexicanos Jugando</button>
+						</div>
+
+						<div class="banner-subcategoria">
+							<a href="#">
+								<img src="./Img/industria-ban.jpg" alt="">
+							</a>
+						</div>
+
+						<div class="galeria-subcategoria">
+							<a href="#">
+								<img src="./Img/industria1.jpg" alt="">
+							</a>
+							<a href="#">
+								<img src="./Img/industria2.jpg" alt="">
+							</a>
+							<a href="#">
+								<img src="./Img/industria3.jpg" alt="">
+							</a>
+							<a href="#">
+								<img src="./Img/industria4.jpg" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<!--Article-->
+	<main class="contenedor">
+		<article>
+		<div id="pantalla">
+			<div class="container">
+				<div class="cubo">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+			</div>
+			<div class="loading">
+				<div>
+					<br><br>
+					<h1 class="h1-cubo">Entrando <br> <br> a Solana</h1>
+					<br>
+					<style>
+						.loader {
+						  display: flex;
+						  justify-content: center;
+						  align-items: center;
+						  height: 100vh;
+						}
+					
+						.dot {
+						  width: 15px;
+						  height: 15px;
+						  background-color: #ffffff;
+						  border-radius: 50%;
+						  margin: 0 5px;
+						  animation: bounce 1s infinite ease-in-out;
+						}
+					
+						.dot:nth-child(2) {
+						  animation-delay: 0.2s;
+						}
+					
+						.dot:nth-child(3) {
+						  animation-delay: 0.4s;
+						}
+					
+						.dot:nth-child(4) {
+						  animation-delay: 0.6s;
+						}
+					
+						.dot:nth-child(5) {
+						  animation-delay: 0.8s;
+						}
+					
+						@keyframes bounce {
+						  0%, 100% {
+							transform: translateY(0);
+						  }
+						  50% {
+							transform: translateY(-20px);
+						  }
+						}
+					  </style>
+					</head>
+					<body>
+					  <div class="loader">
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+					  </div>
+					<br>
+					</div>
+				</div>
+			</div>
+		</div>
+
+			<!--Info de la historia de los videojuegos-->
+			<div id="infov">
+				<h1 class="lines-effect" id="botonv" onclick="mostrarv(); ocultarcub();">Productos Disponibles</h1>
+				<br>
+				<br>
+				<p></p>
+					<br>
+					<img src="pingu1.png" alt="" >
+					<img src="pingu5.png" alt="" >
+				<br>
+				<br>
+				<button class="btn-cerrar" id="cerrar" onclick="ocultarv(); mostrarcub();">Ocultar Info</button>
+			</div>
+			<div id="infoe">
+				<br>
+				<h1 class="lines-effect" id="botone" onclick="mostrare(); ocultarcub();">1970-1979 La Eclosion De Los Videojuegos</h1>
+				<br>
+				<br>
+				<p>info</p>
+					<br>
+					<img src="./Img/space.jpg" alt="">
+					<img src="./Img/asteroids.jpg" alt="" align="right">
+				<br>
+				<br>
+				<button class="btn-cerrar" id="cerrar" onclick="ocultare(); mostrarcub();">Ocultar Info</button>
+			</div>
+			<div id="info8b">
+				<br>
+				<h1 class="lines-effect" id="boton8b" onclick="mostrar8b(); ocultarcub();">1980-1989 La Decada De Los 8-Bits</h1>
+				<br>
+				<br>
+				<p></p>
+					<br>
+					<img src="./Img/8bits.jpg" alt="">
+					<img src="./Img/8bits2.jpg" alt="" align="right">
+				<br>
+				<br>
+				<button class="btn-cerrar" id="cerrar" onclick="ocultar8b(); mostrarcub();">Ocultar Info</button>
+			</div>
+			<div id="info3d">
+				<br>
+				<h1 class="lines-effect" id="boton3d" onclick="mostrar3d(); ocultarcub();">1990-1999 La Revolucion Del 3D</h1>
+				<br>
+				<br>
+				<p></p>
+					<br>
+					<img src="./Img/3d1.jpg" alt="">
+					<img src="./Img/3d2.jpg" alt="" align="right">
+					<br>
+				<button class="btn-cerrar" id="cerrar" onclick="ocultar3d(); mostrarcub();">Ocultar Info</button>
+			</div>
+			<div id="infons">
+				<br>
+				<h1 class="lines-effect" id="botonns" onclick="mostrarns(); ocultarcub();">Desde el:2000 El Comienzo De Un Nuevo Siglo</h1>
+				<br>
+				<br>
+				<p></p>
+					<br>
+					<img src="./Img/nuevos.jpg" alt="">
+					<img src="./Img/nuevos2.jpg" alt="" align="right">
+				<br>
+				<br>
+				<button class="btn-cerrar" id="cerrar" onclick="ocultarns(); mostrarcub();">Ocultar Info</button>
+			</div>
+			<!--info del impacto social-->
+		<div id="infoi">
+			<br>
+			<h1 class="lines-effect" id="botoni" onclick="mostrari(); ocultarcub();">Dona aqui</h1>
+			<br>
+			<br>
+			<p></p>
+				<br>
+				<img src="solana.png" alt="">
+			<br>
+			<br>	
+			<button class="btn-cerrar" id="cerrar" onclick="ocultari(); mostrarcub();">Ocultar info</button>
+		</div>
+			<div id="infom">
+				<br>
+				<h1 class="lines-effect" id="botonm" onclick="mostrarm(); ocultarcub();">Mejora de las Capacidades Cognitivas</h1>
+				<br>
+				<br>
+				<p>info</p>
+					<br>
+					<img src="./Img/mejora1.jpg" alt="">
+					<img src="./Img/mejora2.webp" alt="" align="right">
+				<br>
+				<br>	
+				<button class="btn-cerrar" id="cerrar" onclick="ocultarm(); mostrarcub();">Ocultar info</button>
+			</div>
+			<div id="infor">
+				<br>
+				<h1 class="lines-effect" id="botonr" onclick="mostrarr(); ocultarcub();">Reflejos de la Sociedad</h1>
+				<br>
+				<br>
+				<p>info</p>
+					<br>
+					<img src="./Img/reflejos.jfif" alt="">
+					<img src="./Img/reflejos2.jfif" alt="" align="right">
+				<br>
+				<br>	
+				<button class="btn-cerrar" id="cerrar" onclick="ocultarr(); mostrarcub();">Ocultar info</button>
+			</div>
+			<div id="infoa">
+				<br>
+				<h1 class="lines-effect" id="botona" onclick="mostrara(); ocultarcub();">Adiccion a Los Videojuegos</h1>
+				<br>
+				<br>
+				<p>info</p>
+					<h4>sub</h4>
+					<p>info</p>
+					<br>
+					<img src="./Img/adiccioni.jpg" alt="">
+					<img src="./Img/adiccioni2.jpg" alt="" align="right">
+				<br>
+				<br>	
+				<button class="btn-cerrar" id="cerrar" onclick="ocultara(); mostrarcub();">Ocultar info</button>
+			</div>
+			<!--Info de desarrollo de videojuegos-->
+			<div id="infod">
+				<br>
+				<h1 class="lines-effect" id="botond" onclick="mostrard(); ocultarcub();">Desarrollo De Los Videojuegos</h1>
+				<br>
+				<br>
+				<p>info</p>
+					<br>
+					<img src="./Img/desarrolloi1.jpg" alt="">
+					<img src="./Img/desarrolloi2.webp" alt="" align="right">
+				<br>
+				<br>
+				<button class="btn-cerrar" id="cerrar" onclick="ocultard(); mostrarcub();">Ocultar Info</button>
+			</div>
+			<div id="infof1">
+				<br>
+				<h1 class="lines-effect" id="botond" onclick="mostrarf1(); ocultarcub();">Fase De Concepción</h1>
+				<br>
+				<br>
+				<p>info
+					</p>
+					<br>
+					<img src="./Img/concepcion.png" alt="">
+					<img src="./Img/concepcion2.png" alt="" align="right">
+				<br>
+				<br>
+				<button class="btn-cerrar" id="cerrar" onclick="ocultarf1(); mostrarcub();">Ocultar Info</button>
+			</div>
+			<div id="infof2">
+				<br>
+				<h1 class="lines-effect" id="botonf2" onclick="mostrarf2(); ocultarcub();">Fase De Diseño</h1>
+				<br>
+				<br>
+				<p>ifo</p>
+					<br>
+					<img src="./Img/diseño.jpg" alt="">
+					<img src="./Img/diseño2.jpg" alt="" align="right">
+				<br>
+				<br>
+				<button class="btn-cerrar" id="cerrar" onclick="ocultarf2(); mostrarcub();">Ocultar Info</button>
+			</div>
+			<div id="infof3">
+				<br>
+				<h1 class="lines-effect" id="botonf3" onclick="mostrarf3(); ocultarcub();">Fase de Planificacion</h1>
+				<br>
+				<br>
+				<p>info</p>
+				<br>
+				<img src="./Img/planificacion.png" alt="">
+				<img src="./Img/planificacion2.png" alt="" align="right">
+				<br>
+				<br>
+				<button class="btn-cerrar" id="cerrar" onclick="ocultarf3(); mostrarcub();">Ocultar Info</button>
+			</div>
+			<div id="infof4">
+				<br>
+				<h1 class="lines-effect" id="botonf4" onclick="mostrarf4(); ocultarcub();">Fase de Produccion</h1>
+				<br>
+				<br>
+				<p>info</p>
+				<br>
+				<img src="./Img/produccion2.jpg" alt="">
+				<img src="./Img/produccion.jpg" alt="" align="right">
+				<br>
+				<br>
+				<button class="btn-cerrar" id="cerrar" onclick="ocultarf4(); mostrarcub();">Ocultar Info</button>
+			</div>
+				<div id="infof5">
+				<br>
+				<h1 class="lines-effect" id="botonf5" onclick="mostrarf5(); ocultarcub();">Fase de Pruebas</h1>
+				<br>
+				<br>
+				<p>info</p>
+				<br>
+				<img src="./Img/pruebas.jpeg" alt="">
+				<img src="./Img/pruebas2.jpeg" alt="" align="right">
+				<br>
+				<br>
+				<button class="btn-cerrar" id="cerrar" onclick="ocultarf5(); mostrarcub();">Ocultar Info</button>
+			</div>
+				<div id="infof6">
+				<br>
+				<h1 class="lines-effect" id="botonf6" onclick="mostrarf6(); ocultarcub();">Fase de Distribucion/Marketing</h1>
+				<br>
+				<br>
+				<p>info</p>
+				<br>
+				<img src="./Img/market.jfif" alt="">
+				<img src="./Img/market2.jfif" alt="" align="right">
+				<br>
+				<br>
+				<button class="btn-cerrar" id="cerrar" onclick="ocultarf6(); mostrarcub();">Ocultar Info</button>
+			</div>
+				<div id="infof7">
+				<br>
+				<h1 class="lines-effect" id="botonf7" onclick="mostrarf7(); ocultarcub();">Fase de Mantenimiento</h1>
+				<br>
+				<br>
+				<p>info</p>
+				<br>
+				<img src="./Img/mantenimiento.jfif" alt="">
+				<img src="./Img/mantenimiento.jpg" alt="" align="right">
+				<br>
+				<br>
+				<button class="btn-cerrar" id="cerrar" onclick="ocultarf7(); mostrarcub();">Ocultar Info</button>
+			</div>
+			<!--Industria de los videojuegos-->
+			<div id="infoli">
+				<br>
+				<h1 class="lines-effect" id="botonli" onclick="mostrarli(); ocultarcub();">La Industria</h1>
+				<br>
+				<br>
+				<p>info</p>
+					<p>info</p>
+					   <br>
+					   <img src="./Img/industriai.jfif" alt="">
+					   <img src="./Img/industriai2.jpg" alt="" align="right">
+				<br>
+				<br>
+				<button class="btn-cerrar" id="cerrar" onclick="ocultarli(); mostrarcub();">Ocultar Info</button>
+			</div>
+			<div id="infois">
+				<br>
+				<h1 class="lines-effect" id="botonis" onclick="mostraris(); ocultarcub();">Impacto Economico y Social</h1>
+				<br>
+				<p>
+				<ul>
+					<li></li>
+					<li></li>
+				</ul></p>
+				<br>
+				<img src="./Img/economico.jpg" alt="">
+				<img src="./Img/economico2.jpg" alt="" align="right">
+				<br>
+				<br>
+				<button class="btn-cerrar" id="cerrar" onclick="ocultaris(); mostrarcub();">Ocultar Info</button>
+			</div>
+			<div id="infoad">
+				<br>
+				<h1 class="lines-effect" id="botonad" onclick="mostrarad(); ocultarcub();">Algunos Desafios</h1>
+				<br>
+				<br>
+				<p>ifo
+					</p>
+					<br>
+					<img src="./Img/Desafios.png" alt="">
+					<img src="./Img/Desafios2.png" alt="" align="right">
+				<br>
+				<br>
+				<button class="btn-cerrar" id="cerrar" onclick="ocultarad(); mostrarcub();">Ocultar Info</button>
+			</div>
+			<div id="infomx">
+				<br>
+				<h1 class="lines-effect" id="botonmx" onclick="mostrarmx(); ocultarcub();">Cuanto Tiempo Pasan Los Mexicanos Jugando</h1>
+				<br>
+				<br>
+				<p>info</p>
+					<br>
+					<img src="./Img/mexicanos.jpg" alt="">
+					<img src="./Img/mexicanos2.jpg" alt="" align="right">
+				<br>
+				<br>
+				<button class="btn-cerrar" id="cerrar" onclick="ocultarmx(); mostrarcub();">Ocultar Info</button>
+			</div>
+		</article>
+	</main>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>
